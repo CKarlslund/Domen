@@ -1,0 +1,12 @@
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\bin\Debug\net7.0\Domen.Domain.deps.json
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\bin\Debug\net7.0\Domen.Domain.dll
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\bin\Debug\net7.0\Domen.Domain.pdb
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\Domen.Domain.csproj.AssemblyReference.cache
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\Domen.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\Domen.Domain.AssemblyInfoInputs.cache
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\Domen.Domain.AssemblyInfo.cs
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\Domen.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\Domen.Domain.dll
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\refint\Domen.Domain.dll
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\Domen.Domain.pdb
+C:\Users\Cornelia\Source\Domen\src\Domen.Domain\obj\Debug\net7.0\ref\Domen.Domain.dll
