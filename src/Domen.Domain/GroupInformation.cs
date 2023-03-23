@@ -45,7 +45,7 @@ namespace Domen.Domain
         public string Enemies { get; set; }
 
         [Column(14)]
-        public string Money { get; set; }
+        public string Riches { get; set; }
 
         [Column(15)]
         public string GroupType { get; set; }
