@@ -29,6 +29,16 @@ namespace Domen.UI.UnitTests
             }
         }
 
+        [Fact]
+        public void Should_convert_to_userInformation()
+        {
+            const string path = "UserExcelExample.xlsx";
+
+            var result = _excelService.ConvertToUserInformation(path);
+
+            result.FirstOrDefault()?.Email.Should().Be("cornelia.karlslund@gmail.com");
+        }
+
         [Theory]
         [AutoData]
         public void Should_convert_to_word_file(List<GroupInformation> groupInformationList)

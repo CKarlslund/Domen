@@ -33,6 +33,14 @@ namespace Domen.Application
             return filteredGroups;
         }
 
+        public IEnumerable<UserInformation> ConvertToUserInformation(string path)
+        {
+            var excelMapper = new ExcelMapper(path);
+            var userInformationList = excelMapper.Fetch<UserInformation>();
+
+            return userInformationList;
+        }
+
         public Document ConvertToWordDocument(IEnumerable<GroupInformation> groupInformationList)
         {
             var doc = new Document();
