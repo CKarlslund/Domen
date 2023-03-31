@@ -1,3 +1,4 @@
+using System.Xml.XPath;
 using AutoFixture.Xunit2;
 using Domen.Application;
 using Domen.Domain;
@@ -21,7 +22,7 @@ namespace Domen.UI.UnitTests
 
             var result = _excelService.ConvertToGroupInformation(path).ToList();
 
-            result.FirstOrDefault()?.NameOffGame.Should().Be("H�rb�rget");
+            result.FirstOrDefault()?.NameOffGame.Should().Be("Härbärget");
 
             foreach (var groupInformation in result)
             {
@@ -34,9 +35,10 @@ namespace Domen.UI.UnitTests
         {
             const string path = "UserExcelExample.xlsx";
 
-            var result = _excelService.ConvertToUserInformation(path);
+            var result = _excelService.ConvertToUserInformation(path).ToList();
 
             result.FirstOrDefault()?.Email.Should().Be("cornelia.karlslund@gmail.com");
+            result.Count().Should().Be(39);
         }
 
         [Theory]

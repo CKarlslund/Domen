@@ -13,7 +13,7 @@ public class UserInformation
 	[Column(4)]
 	public string PersonalId { get; set; }
 	[Column(5)]
-	public int Age { get; set; }
+	public string Age { get; set; }
 	[Column(6)]
 	public string OffNameOfAdult { get; set; }
 	[Column(7)]
