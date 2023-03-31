@@ -19,9 +19,9 @@ namespace Domen.UI.UnitTests
         {
             const string path = "ExcelExample.xlsx";
 
-            var result = _excelService.ConvertToGroupInformation(path);
+            var result = _excelService.ConvertToGroupInformation(path).ToList();
 
-            result.FirstOrDefault().NameOffGame.Should().Be("Härbärget");
+            result.FirstOrDefault()?.NameOffGame.Should().Be("Hï¿½rbï¿½rget");
 
             foreach (var groupInformation in result)
             {
@@ -31,18 +31,17 @@ namespace Domen.UI.UnitTests
 
         [Theory]
         [AutoData]
-        public void Should_convert_to_word_file(IEnumerable<GroupInformation> groupInformationList)
+        public void Should_convert_to_word_file(List<GroupInformation> groupInformationList)
         {
-            groupInformationList.FirstOrDefault().ScenarioWanted = "Ja";
-            groupInformationList.LastOrDefault().ScenarioWanted = "Nej";
+            groupInformationList.FirstOrDefault()!.ScenarioWanted = "Ja";
+            groupInformationList.LastOrDefault()!.ScenarioWanted = "Nej";
 
             var result = _excelService.ConvertToWordDocument(groupInformationList);
 
             result.Sections.Count.Should().Be(2);
             result.Sections[0].Paragraphs.Count.Should().Be(11);
             result.Sections[0].Paragraphs.Count.Should().Be(11);
-            result.Sections[0].Paragraphs[0].Text.Should().Contain(groupInformationList.FirstOrDefault().NameInGame);
+            result.Sections[0].Paragraphs[0].Text.Should().Contain(groupInformationList.FirstOrDefault()!.NameInGame);
         }
-
     }
 }
