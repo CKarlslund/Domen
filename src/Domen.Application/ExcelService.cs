@@ -90,6 +90,20 @@ namespace Domen.Application
             title2.CharacterFormat.Bold = true;
             paragraph2.AppendText(groupInformation.NameInGame);
 
+            var emailAddressParagraph = section.AddParagraph();
+            var emailAddressParagraphTitle = emailAddressParagraph.AppendText("Emailadress: ");
+            emailAddressParagraphTitle.CharacterFormat.UnderlineStyle = UnderlineStyle.Single;
+            emailAddressParagraphTitle.CharacterFormat.FontSize = 12;
+            emailAddressParagraphTitle.CharacterFormat.Bold = true;
+            emailAddressParagraph.AppendText(groupInformation.Email);
+
+            var groupTypeParagraph = section.AddParagraph();
+            var groupTypeParagraphTitle = groupTypeParagraph.AppendText("Grupptyp: ");
+            groupTypeParagraphTitle.CharacterFormat.UnderlineStyle = UnderlineStyle.Single;
+            groupTypeParagraphTitle.CharacterFormat.FontSize = 12;
+            groupTypeParagraphTitle.CharacterFormat.Bold = true;
+            groupTypeParagraph.AppendText(groupInformation.GroupType);
+
             var paragraph3 = section.AddParagraph();
             var title3 = paragraph3.AppendText($"Kort beskrivning: ");
             title3.CharacterFormat.UnderlineStyle = UnderlineStyle.Single;
@@ -143,7 +157,7 @@ namespace Domen.Application
             section.AddParagraph();
         }
 
-        public bool ConvertToDocs(IEnumerable<GroupInformation> groupInformationList)
+        public List<Document> ConvertToDocs(IEnumerable<GroupInformation> groupInformationList)
         {
             throw new NotImplementedException();
         }
