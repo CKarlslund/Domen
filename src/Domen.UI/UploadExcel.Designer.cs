@@ -151,7 +151,7 @@
             MainMenuStrip = menuStrip1;
             Name = "UploadExcel";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Domen över Hjorvard";
+            Text = "Domen över Hjordvard";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

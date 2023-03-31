@@ -43,6 +43,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -59,6 +67,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -165,7 +181,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Domen över Hjorvard"
+        "ProductName" = "8:Domen över Hjordvard"
         "ProductCode" = "8:{790FBBA6-D4C5-4EF7-8FB5-BED2864499A8}"
         "PackageCode" = "8:{72BC3253-37A3-4F1D-B69E-253388720D01}"
         "UpgradeCode" = "8:{D8780DD6-1CC9-4683-81BC-ADC2D308251C}"
@@ -178,7 +194,7 @@
         "Manufacturer" = "8:Cornelia"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Domen över Hjorvard"
+        "Title" = "8:Domen över Hjordvard"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Cornelia"
         "Keywords" = "8:"
