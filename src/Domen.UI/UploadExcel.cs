@@ -28,7 +28,7 @@ namespace UI
 
                 _groupInformationList = _excelService.ConvertToGroupInformation(path);
 
-                if (!_groupInformationList.Any())
+                if (_groupInformationList.Any())
                 {
                     label1.Visible = true;
                     button2.Visible = true;
@@ -43,7 +43,7 @@ namespace UI
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                var result = _excelService.SaveToFile(saveFileDialog1.FileName);
+                var result = _excelService.SaveToFile(saveFileDialog1.FileName, converted);
 
                 label3.Text = result;
                 label3.Visible = true;

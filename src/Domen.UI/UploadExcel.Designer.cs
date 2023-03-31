@@ -133,6 +133,7 @@
             button3.Text = "Spara grupper som Google Docs";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
+            button3.Visible = false;
             // 
             // UploadExcel
             // 

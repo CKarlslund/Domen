@@ -7,11 +7,8 @@ namespace Domen.Application
 {
     public class ExcelService
     {
-        private Document _processedFile;
-
         public ExcelService()
         {
-            _processedFile = new Document();
         }
 
         public IEnumerable<GroupInformation> ConvertToGroupInformation(string path)
@@ -67,11 +64,11 @@ namespace Domen.Application
             return doc;
         }
 
-        public string SaveToFile(string filePath)
+        public string SaveToFile(string filePath, Document document)
         {
             try
             {
-                _processedFile.SaveToFile(filePath);
+                document.SaveToFile(filePath);
                 return $"Fil sparad i {filePath}";
             }
             catch (Exception e)
