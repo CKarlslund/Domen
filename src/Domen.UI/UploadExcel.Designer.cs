@@ -39,6 +39,7 @@
             alternativToolStripMenuItem = new ToolStripMenuItem();
             avslutaToolStripMenuItem = new ToolStripMenuItem();
             label3 = new Label();
+            button3 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -55,20 +56,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(191, 168);
+            label1.Location = new Point(267, 168);
             label1.Name = "label1";
-            label1.Size = new Size(438, 25);
+            label1.Size = new Size(230, 25);
             label1.TabIndex = 1;
-            label1.Text = "Nu är din uppladdning klar. Klicka nedan för att spara.";
+            label1.Text = "Nu är din uppladdning klar!";
             label1.Visible = false;
             // 
             // button2
             // 
-            button2.Location = new Point(329, 208);
+            button2.Location = new Point(217, 215);
             button2.Name = "button2";
-            button2.Size = new Size(112, 34);
+            button2.Size = new Size(325, 34);
             button2.TabIndex = 2;
-            button2.Text = "Spara fil";
+            button2.Text = "Spara grupper som Word-dokument";
             button2.UseVisualStyleBackColor = true;
             button2.Visible = false;
             button2.Click += button2_Click;
@@ -115,13 +116,23 @@
             // label3
             // 
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(128, 254);
+            label3.Location = new Point(99, 305);
             label3.Name = "label3";
-            label3.Size = new Size(526, 187);
+            label3.Size = new Size(526, 136);
             label3.TabIndex = 5;
             label3.Text = "Fil sparad!";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             label3.Visible = false;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(232, 268);
+            button3.Name = "button3";
+            button3.Size = new Size(286, 34);
+            button3.TabIndex = 6;
+            button3.Text = "Spara grupper som Google Docs";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // UploadExcel
             // 
@@ -129,6 +140,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(button2);
@@ -158,5 +170,6 @@
         private ToolStripMenuItem alternativToolStripMenuItem;
         private ToolStripMenuItem avslutaToolStripMenuItem;
         private Label label3;
+        private Button button3;
     }
 }

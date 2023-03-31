@@ -14,15 +14,6 @@ namespace Domen.Application
             _processedFile = new Document();
         }
 
-        public bool ConvertExcelToWord(string excelFilePath)
-        {
-            var groupInformationList = ConvertToGroupInformation(excelFilePath);
-
-            _processedFile = ConvertToWordDocument(groupInformationList);
-
-            return true;
-        }
-
         public IEnumerable<GroupInformation> ConvertToGroupInformation(string path)
         {
             var excelMapper = new ExcelMapper(path);
@@ -150,6 +141,11 @@ namespace Domen.Application
             var breaker = section.AddParagraph();
             breaker.AppendText("—----------------------------------------------");
             section.AddParagraph();
+        }
+
+        public bool ConvertToDocs(IEnumerable<GroupInformation> groupInformationList)
+        {
+            throw new NotImplementedException();
         }
     }
 }
